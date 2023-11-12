@@ -89,9 +89,9 @@
         async function geojsonFetch() {
             // fetch geojson
             let response, Hospitals, WA_State_Boundary;
-            response = await fetch('/assets/Hospitals.geojson');
+            response = await fetch('assets/Hospitals.geojson');
             Hospitals = await response.json();
-            response = await fetch('/assets/WA_State_Boundary.geojson');
+            response = await fetch('assets/WA_State_Boundary.geojson');
             WA_State_Boundary = await response.json();
 
             table = document.getElementsByTagName("table")[0];
